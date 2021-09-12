@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.step-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-container {
+  position: relative;
+  width: 100px;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  font-weight: bold;
+}
+
+.after {
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background-color: #ddd;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.before {
+  position: absolute;
+  height: 3px;
+  background-color: rgb(40, 38, 151);
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  transition: 300ms;
+}
+
+.step1 {
+  border-color: rgb(40, 38, 151);
+}
